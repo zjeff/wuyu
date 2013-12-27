@@ -107,14 +107,9 @@
 				<li class="newslist">
 					<h2>校园动态</h2>
 					<ul id="newdynamic">
-						<li><a href="">千万不要空喊校园文化的建设口号</a></li>
-						<li><a href="">千万不要空喊校园文化的建设口号</a></li>
-						<li><a href="">千万不要空喊校园文化的建设口号</a></li>
-						<li><a href="">千万不要空喊校园文化的建设口号</a></li>
-						<li><a href="">千万不要空喊校园文化的建设口号</a></li>
-						<li><a href="">千万不要空喊校园文化的建设口号</a></li>
-						<li><a href="">千万不要空喊校园文化的建设口号</a></li>
-						<li><a href="">千万不要空喊校园文化的建设口号</a></li>
+                        <c:forEach var="feed" items="${feeds}">
+						<li><a href="">${feed.title}</a></li>
+                        </c:forEach>
 					</ul>
 					<div id="more">
 						<a href="" title="更多">more</a>

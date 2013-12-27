@@ -23,11 +23,19 @@ public class SchoolServiceTest {
     }
 
     @Test
-    public void testList() {
+    public void testListSchools() {
         SchoolService schoolService = ctx.getBean("schoolService", SchoolService.class);
         List<Map<String,Object>> maps = schoolService.listSchools(1);
         System.out.println(maps);
         Assert.assertEquals(true, true);
     }
+
+	@Test
+	public void testListSchoolFeeds() {
+		SchoolService schoolService = ctx.getBean("schoolService", SchoolService.class);
+		List<Map<String, Object>> maps = schoolService.listSchoolFeeds(10);
+		System.out.println(maps);
+		Assert.assertEquals(true,true);
+	}
 
 }

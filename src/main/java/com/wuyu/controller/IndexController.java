@@ -18,8 +18,9 @@ public class IndexController {
 
     @Autowired
     SchoolService schoolService;
+	private static final int feedSize = 8;
 
-    @RequestMapping("")
+	@RequestMapping("")
     public String home(Model model) {
         //小学
         List<Map<String,Object>> level1 = schoolService.listSchools(1);
@@ -30,12 +31,14 @@ public class IndexController {
         //大学
         List<Map<String,Object>> level3 = schoolService.listSchools(3);
 
-        //全日制
+		List<Map<String, Object>> feedMaps = schoolService.listSchoolFeeds(feedSize);
+
+		//全日制
         // TODO
-        System.out.println(level1.size());
         model.addAttribute("level1", level1);
         model.addAttribute("level2", level2);
         model.addAttribute("level3", level3);
+		model.addAttribute("feeds", feedMaps);
         return "wy";
     }
 }

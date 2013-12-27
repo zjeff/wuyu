@@ -21,7 +21,14 @@ public class SchoolDao {
         return template.queryForList(QUERY_BY_LEVEL, level);
     }
 
+	public List<Map<String, Object>> querySchoolFeed(int size) {
+		return template.queryForList(QUERY_FEED, size);
+	}
+
 
     private static final String QUERY_BY_LEVEL =
             "SELECT * FROM SCHOOL_CASE WHERE SCHOOL_LEVEL = ?";
+
+	private static final String QUERY_FEED = "SELECT * FROM SCHOOL_FEED order by c_time " +
+			" desc limit ?";
 }

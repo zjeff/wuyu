@@ -16,7 +16,22 @@ public class SchoolService {
     @Autowired
     private SchoolDao schoolDao;
 
+	/**
+	 * 查询学校
+	 * @param level 1:小学；2:初中；3:大学
+	 * @return
+	 */
     public List<Map<String, Object>> listSchools(int level) {
         return schoolDao.querySchoolCase(level);
     }
+
+
+	/**
+	 * 查询动态
+	 * @param size
+	 * @return
+	 */
+	public List<Map<String, Object>> listSchoolFeeds(int size) {
+		return schoolDao.querySchoolFeed(size);
+	}
 }

@@ -1,4 +1,4 @@
-package com.wuyu.service.test;
+package com.wuyu.dao.test;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -30,4 +30,16 @@ public class SchoolDaoTest {
             jdbcTemplate.update(sql, new Object[]{"小学", "p"+ i +".jpg", "", 1, 1, date});
         }
     }
+
+
+	@Test
+	public void testAddSchoolFeed() {
+		JdbcTemplate jdbcTemplate = ctx.getBean("jdbcTemplate", JdbcTemplate.class);
+		String sql = "INSERT INTO school_feed(title, content, c_time, u_time, u_id" +
+				" ) VALUES(?, ?, ?, ?, ?)";
+		Date date = new Date();
+		for(int i=1; i<10; i++) {
+			jdbcTemplate.update(sql, new Object[]{"校园动态标题", "校园动态内容", date, date, 1});
+		}
+	}
 }
