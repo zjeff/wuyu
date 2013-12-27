@@ -1,0 +1,54 @@
+body{margin: 0 auto;text-align:center;padding: 0;font-size: 12px;font-family: arial "宋体";}
+a{color:#000;text-decoration: none;}
+h1,h2,h3,h4,h5,h6,ul{margin: 0;padding: 0;}
+ul{list-style:none;}
+#container{margin: 0 auto;width: 1000px;text-align: left;}
+#logo{margin: 20px 0;background: #f9f9f9;}
+#logo h1{width: 145px;height: 73px;}
+#logo h1 a{width: 145px;height: 73px;display: block;background: url(../images/logo.gif) no-repeat;text-indent: -9999px;}
+#nav{margin-bottom: 10px;height: 27px;line-height: 27px;background: #577c8c;}
+#banner{border:1px solid #c1c1c1;}
+#banner a{display: block;width: 998px;height: 324px;}
+#nav{overflow: hidden;}
+#nav ul#navul{}
+#nav ul#navul li.navli{margin: 0 10px;float: left;display: inline;width: 122.85px;text-align: center;}
+#nav ul#navul li.navli a.nava{float:left;padding-left:30px;color:#fff;height: 27px;line-height: 27px;}
+#nav ul#navul li.navli a.nava span{float:left;padding-right: 30px;}
+#nav ul#navul li.navli a.active{background: #9e122d url(../images/nav_bg_l.gif) top left no-repeat;}
+#nav ul#navul li.navli a.active span{background: url(../images/nav_bg_r.gif) top right no-repeat;}
+#maincontent{}
+#maincontent .content{margin-top: 10px;}
+#maincontent .content ul.taglist{overflow: hidden;background: #577c8c;padding:7px 10px;}
+#maincontent .content ul.taglist li{float:left;display: inline;}
+#maincontent .content ul.taglist li.more{float:right;}
+#maincontent .content ul.taglist li a{float:left;padding-left:9px;color:#fff;height: 23px;line-height: 23px;}
+#maincontent .content ul.taglist li a span{float:left;padding-right: 9px;}
+#maincontent .content ul.taglist li a.active{background: #9e122d url(../images/mnav_l.gif) top left no-repeat;}
+#maincontent .content ul.taglist li a.active span{background: url(../images/mnav_r.gif) top right no-repeat;}
+#maincontent .content ul.taglist li.more a{font-family: "arial";}
+#maincontent .content ul.taglist li.more a:hover{background: none;}
+#maincontent .content ul.contentdetail{overflow: hidden;background: #f1f1f1;padding-bottom: 18px;}
+#maincontent .content ul.contentdetail li{margin: 0 auto;padding-top: 25px;float: left;display: inline;width: 166.66px;text-align: center;}
+#maincontent .content ul.contentdetail li a{text-align: center;}
+#maincontent .content ul.contentdetail li a.imgs{margin: 0 auto 5px auto;width: 105px;display: block;height:95px;text-align: center;}
+#maincontent #news{overflow: hidden;margin:20px 0 0 -10px;}
+#maincontent #news li.newslist{float: left;display: inline;border:1px solid #e6e6e6;width: 252px;height: 265px;margin-left: 10px;}
+#maincontent #news li.contact{width: 202px;}
+#maincontent #news li.newslist h2{float: left;display: inline;text-indent:15px;background: #577c8c;font-size: 12px;width: 252px;height: 35px;line-height: 35px;color:#fff;}
+#maincontent #news li.newslist h2#contact{width: 202px;}
+#maincontent #news li.newslist ul{width: 192px;overflow:hidden;clear:left;padding: 5px 5px 0 5px;}
+#maincontent #news li.newslist ul li{margin:10px 5px;padding-left: 42px;width: 150px;line-height: 22px;}
+#maincontent #news li.newslist ul li span{font-weight: bold;float:left;width: 42px;margin-left: -42px;}
+#maincontent #news li.newslist div#imglist{margin:20px 0 0 10px;float:left;width: 229px;height: 148px;border:1px solid #a7bbbc;overflow: hidden;}
+#maincontent  #paginate{clear:both;overflow: hidden;padding-top: 5px;margin-left: 139px;}
+#maincontent  #paginate a{float:left;width: 15px;height: 15px;line-height: 15px;margin-right: 5px;text-align: center;}
+#maincontent  #paginate a:hover{background: #ff4b00;color:#fff;}
+#maincontent  #paginate a.active{background: #ff4b00;color:#fff;}
+#maincontent #news li.newslist #newdynamic{float:left;margin: 10px 0 0 0;padding: 5px;}
+#maincontent #news li.newslist #newdynamic li{margin:0;padding: 0 0 0 15px;width: 232px;line-height: 24px;background: url(../images/arrow.gif) no-repeat 5px center;}
+#more{position: relative;clear:both;}
+#more a{position: absolute;width: 32px;height: 9px;line-height: 9px;right: 5px;background: url(../images/more.gif) no-repeat 0 0;text-indent: -9999px;}
+#maincontent #news li.newslist h4{float:left;margin: 15px 0 0 5px;font-size:12px;font-weight: normal;}
+#maincontent #news li.newslist p{float: left;margin: 5px 0;padding: 0 5px;line-height: 16px;}
+#column{height: 25px;background: #577c8c;margin: 40px 0 20px 0;}
+#bottomlinks{text-align: center;}
