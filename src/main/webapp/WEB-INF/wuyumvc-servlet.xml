@@ -36,4 +36,18 @@
             <value></value>
         </property>
     </bean>
+    
+    <bean id="placeholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:init.properties</value>
+			</list>
+		</property>
+	</bean>
+    	<bean id="paramService" class="com.wuyu.z.util.DefineParamService">
+		<property name="serverName">
+			<value>${${serverName}.url}</value>
+		</property>
+	</bean>
 </beans>

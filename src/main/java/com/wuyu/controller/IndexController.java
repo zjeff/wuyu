@@ -5,9 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by Administrator on 13-12-26.
@@ -41,4 +47,18 @@ public class IndexController {
 		model.addAttribute("feeds", feedMaps);
         return "wy";
     }
+	
+	@RequestMapping("/test")
+	public void test(HttpServletRequest req, HttpServletResponse res) throws IOException {
+		res.getWriter().print("run...");
+	}
+	
+	
+	@RequestMapping("/ajax")
+	@ResponseBody
+	public Map<String, String> ajax(HttpServletRequest req, HttpServletResponse res) throws IOException {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("a", "a");
+		return map;
+	}
 }

@@ -24,4 +24,6 @@
             <value></value>
         </property>
     </bean>
+    <!-- 需要java指定 serverName 参数, 如 java -DserverName=abc -->
+    <!-- <import resource="classpath:applicationContext-param.xml"/> -->
 </beans>
